@@ -1,20 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="cupcake" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMA-JON</title>
+    <title>E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
+        <!-- Navber section -->
+        <section>
+            <div class="navbar bg-[#1C2B35]">
+                <div class="navbar-start mx-4">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Order</a></li>
+                            <li><a>
+                                    <div class="dropdown dropdown-end">
+                                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                                            <div class="indicator">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                </svg>
+                                                <span class="badge badge-sm indicator-item">8</span>
+                                            </div>
+                                        </label>
+                                        <div tabindex="0"
+                                            class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                                            <div class="card-body">
+                                                <span class="font-bold text-lg">8 Items</span>
+                                                <span class="text-info">Subtotal: $999</span>
+                                                <div class="card-actions">
+                                                    <button class="btn btn-primary btn-block">View cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl text-white">E-commerce</a>
+                    <!-- <img src="./images/Logo (1).png" alt=""> -->
+                </div>
+                <div class="navbar-end mx-4 text-white  hidden lg:flex items-center">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:bg-sky-300"><a>Home</a></li>
+                        <li><a>
+                                <div class="dropdown dropdown-center">
+                                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                                        <div class="indicator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+                                            <span class="badge badge-sm indicator-item">8</span>
+                                        </div>
+                                    </label>
+                                    <div tabindex="0"
+                                        class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                                        <div class="card-body">
+                                            <span class="font-bold text-lg">8 Items</span>
+                                            <span class="text-info">Subtotal: $999</span>
+                                            <div class="card-actions">
+                                                <button class="btn btn-primary btn-block">View cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </div>
+            </div>
 
+
+        </section>
     </header>
     <main>
+        <!-- Category section -->
+        <section id="categoryMenu" class="flex flex-col lg:flex-row md:fle justify-center items-center mt-7">
+            <button onclick="allProduct()"
+                class="btn btn-outline btn-error mx-3 text-xl font-semibold mt-3">All</button>
+        </section>
+        <!-- Category content  -->
+        <section id="categoryContent"
+            class="grid  grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-10 container mx-auto mt-10 px-5">
 
+        </section>
+        <!-- Show All product -->
+        <section id="showAllProduct"
+            class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-10 container mx-auto mt-10 px-5">
+
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./Js/Shop.js"></script>
 </body>
 </html>
